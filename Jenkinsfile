@@ -5,7 +5,7 @@ def checkout_git_code(){
     checkout poll: true, scm: [$class: 'GitSCM', branches: [[name: "/master"]],
                                doGenerateSubmoduleConfigurations: false,
                                submodulecfg: [],
-                               userRemoteConfigs: [[url: "https://github.com/Glad-Source/demo-project.git"]]
+                               userRemoteConfigs: [[url: "https://github.com/Glad-Source/demo-project.git"]]]
 }
                                
 node{
