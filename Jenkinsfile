@@ -4,7 +4,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
 def checkout_git_code(){
     checkout poll: true, scm: [$class: 'GitSCM', branches: [[name: "/master"]],
                                doGenerateSubmoduleConfigurations: false,
-                               submodulecfg: [],
+                               submoduleCfg: [],
                                userRemoteConfigs: [[url: "https://github.com/Glad-Source/demo-project.git"]]]
 }
                                
