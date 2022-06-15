@@ -9,9 +9,11 @@ node{
                                         submoduleCfg: [],
           userRemoteConfigs: [[url: 'https://github.com/Glad-Source/demo-project.git']]]
         
-        sh """git show -s --pretty=%an && ls"""
+        sh """git show -s --pretty=%an>> committer_name"""
         
         
     }
+    stage("get name")
+	sh """ls"""
     
       }
