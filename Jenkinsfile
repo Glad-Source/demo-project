@@ -11,7 +11,7 @@ node{
         
         sh """echo git checkout successfull && ls"""
         
-        echo "${GIT_COMMITTER_NAME}"
+        echo "${GIT_BRANCH}"
     }
     
       }
