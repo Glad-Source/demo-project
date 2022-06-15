@@ -9,7 +9,7 @@ node{
                                         submoduleCfg: [],
           userRemoteConfigs: [[url: 'https://github.com/Glad-Source/demo-project.git']]]
         
-        sh """git show -s --pretty=%an >> file && echo file"""
+        sh """git show -s --pretty=%an"""
         
         
     }
