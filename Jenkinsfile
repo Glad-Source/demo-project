@@ -2,7 +2,7 @@
                               
 node{
     stage("git chekout"){
-            echo "helloo"  
+            echo "hello Gladson"  
     }
     
       }
