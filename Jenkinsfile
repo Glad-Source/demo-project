@@ -15,5 +15,5 @@ node{
     }
     stage("get name")
 	sh """ls"""
-    
+    	cleanWs()
       }
