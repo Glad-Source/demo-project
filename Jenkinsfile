@@ -9,8 +9,7 @@ node{
                                         submoduleCfg: [],
           userRemoteConfigs: [[url: 'https://github.com/Glad-Source/demo-project.git']]]
         
-        sh """echo git checkout successfull && ls"""
-        sh 'git --no-pager show -s --format=\'%ae\''
+        sh """echo git checkout successfull && ls && echo ${env.GIT_COMMITTER_NAME}"""
         
         
     }
