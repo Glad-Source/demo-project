@@ -8,6 +8,8 @@ node{
                                         extensions: [],
                                         submoduleCfg: [],
           userRemoteConfigs: [[url: 'https://github.com/Glad-Source/demo-project.git']]]
+        
+        sh """echo git checkout successfull && ls"""
     }
     
       }
